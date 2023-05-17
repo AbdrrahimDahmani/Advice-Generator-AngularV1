@@ -1,0 +1,23 @@
+<main class="parent">
+  <div class="container">
+    <!-- Advice ID goes here -->
+    <div class="titleContainer">
+      <h1>ADVICE #<span id="adviceId">{{responseAdvice.id}}</span></h1>
+    </div>
+    <div class="adviceContainer">
+      <blockquote>‘‘<span id="advice">{{responseAdvice.advice}}</span>’’</blockquote>
+    </div>
+    <picture class="devider">
+      <source
+        media="(max-width:470px)"
+        srcset="/assets/pattern-divider-mobile.svg"
+      />
+      <img src="/assets/pattern-divider-desktop.svg" alt="Devider" />
+    </picture>
+  </div>
+  <div class="dice mb-2">
+    <button class="roll" id="btn" (click)="displayAdvice()">
+      <img src="/assets/icon-dice.svg" alt="Reroll" />
+    </button>
+  </div>
+</main>
